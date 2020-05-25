@@ -1,8 +1,6 @@
 # SqlOptimizer
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sql_optimizer`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+SqlOptimizer this is a gem for query optimization in your app. You can use two our method to check you query: `anayle` and `check_n_plus_one`. This is not so much, but we'll add more in the future. Also you can visit [localhost:3000/sql_optimizer](http://localhost:3000/sql_optimizer) to see information about queries in your app.
 
 ## Installation
 
@@ -19,10 +17,28 @@ And then execute:
 Or install it yourself as:
 
     $ gem install sql_optimizer
+    
+Run `rails g sql_optimizer` to load all files and migrations
 
 ## Usage
 
-TODO: Write usage instructions here
+Visit [localhost:3000/sql_optimizer](http://localhost:3000/sql_optimizer) to see information about queries
+
+### Analyze
+
+Add to your query `analyze` method to see full information about queries
+For example:
+```
+MyModel.scope.analyze
+```
+
+### Check n+1
+
+Add to your query `check_n_plus_one` method to see if query has n+1 and if has, you'll get recommendation how to omit this.
+For example:
+```
+MyModel.scope.check_n_plus_one
+```
 
 ## Development
 
