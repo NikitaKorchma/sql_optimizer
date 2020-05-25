@@ -1,5 +1,7 @@
 # SqlOptimizer
 
+**This gem I use for my diploma, it isn't perfect, so I don't recommend to use it. In the future maybe I'll improve it.**
+
 SqlOptimizer this is a gem for query optimization in your app. You can use two our method to check you query: `anayle` and `check_n_plus_one`. This is not so much, but we'll add more in the future. Also you can visit [localhost:3000/sql_optimizer](http://localhost:3000/sql_optimizer) to see information about queries in your app.
 
 ## Installation
